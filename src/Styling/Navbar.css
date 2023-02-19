@@ -1,5 +1,11 @@
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    position: fixed;
+    top: 0;
+    background: green;
+    width: 100%;
+    padding: 15px 25px
 }
 
 .nav_content {
@@ -14,11 +20,20 @@
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.navlink li {
+    margin-right: 50px
+}
+
+.navlink li:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .navlink a {
-    color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
+    color: white;
 }

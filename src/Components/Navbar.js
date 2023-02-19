@@ -4,23 +4,24 @@ import { useSelector } from 'react-redux'
 import '../Styling/Navbar.css'
 
 const Navbar = () => {
+    // get state values from redux store
     const items = useSelector(state => state.cart)
     return (
-        <nav className='navbar' style={{ position: 'fixed', top: '0', background: 'green', width: '100%', padding:'15px 25px' }}>
+        <nav className='navbar'>
             <div className='nav_content'>
-                <span style={{ fontSize: '32px', fontWeight: '600' }}>Redux Cart Store</span>
+                <span style={{ fontSize: '32px' }}>Redux Cart Store</span>
                 <ul className='navlink'>
                     <Link to='/'>
-                        <li style={{ marginRight: '50px' }}>
+                        <li>
                             Home
                         </li>
                     </Link>
                     <Link to='/cart'>
-                        <li style={{ marginRight: '50px' }}>
+                        <li>
                             Cart
                         </li>
                     </Link>
-                    <span style={{ fontWeight: 'bold' }}>Cart Items : {items.length}</span>
+                    <span>Cart Items : {items.length}</span>
                 </ul>
             </div>
         </nav>
